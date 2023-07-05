@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "UNDICED"
+version = "0.1.0"
+description = ""
+authors = ["Delsus"]
+
+[tool.poetry.dependencies]
+python = "3.11.*"
+numpy = "^1.22.2"
+Flask = "^2.2.0"
+urllib3 = "^1.26.12"
+discord = "^2.1.0"
+APScheduler = "^3.9.1"
+python-dotenv = ">=0.10.4"
+pydantic = { version = "1.10.9", extras = ["dotenv"]}
+
+[tool.poetry.dev-dependencies]
+debugpy = "^1.6.2"
+replit-python-lsp-server = {extras = ["yapf", "rope", "pyflakes"], version = "^1.5.9"}
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
